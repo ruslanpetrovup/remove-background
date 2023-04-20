@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Remove Background from Image for Free</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -38,7 +42,39 @@
     <section class="hero">
       <div class="container">
         <div class="hero__block">
-          <div class="hero__slider"></div>
+          <div class="hero__slider">
+            <div class="swiper" id="hero">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img
+                    class="hero__slider-img"
+                    src="./assets/hero-slider/slide-1.webp"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero__slider-img"
+                    src="./assets/hero-slider/slide-2.webp"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero__slider-img"
+                    src="./assets/hero-slider/slide-3.webp"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero__slider-img"
+                    src="./assets/hero-slider/slide-4.webp"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
 
           <div class="hero__content">
             <h1 class="hero__content-title">
@@ -81,10 +117,13 @@
             </div>
             <ul class="makes__example-rules">
               <li class="makes__example-rules-item">
-                <img
-                  class="makes__example-rules-item-image"
-                  src="./assets/makes-slider/slide-1/people1.webp"
-                />
+                <div class="makes__example-rules-item-image-block">
+
+                  <img
+                    class="makes__example-rules-item-image"
+                    src="./assets/makes-slider/slide-1/people1.webp"
+                  />
+                </div>
                 <p class="makes__example-rules-item-desc">
                   Upload image for photo editing to perfectly fit Instagram,
                   Facebook, TikTok, YT, passport
@@ -92,14 +131,12 @@
               </li>
 
               <li class="makes__example-rules-item">
-                <img class="makes__example-rules-item-icon" />
-              </li>
-
-              <li class="makes__example-rules-item">
+                <div class="makes__example-rules-item-image-block">
                 <img
                   class="makes__example-rules-item-image"
                   src="./assets/makes-slider/slide-1/people2.webp"
                 />
+                </div>
                 <p class="makes__example-rules-item-desc">
                   Upload image for photo editing to perfectly fit Instagram,
                   Facebook, TikTok, YT, passport
@@ -107,14 +144,12 @@
               </li>
 
               <li class="makes__example-rules-item">
-                <img class="makes__example-rules-item-icon" />
-              </li>
-
-              <li class="makes__example-rules-item">
+                <div class="makes__example-rules-item-image-block">
                 <img
                   class="makes__example-rules-item-image"
                   src="./assets/makes-slider/slide-1/people3.webp"
                 />
+                </div>
                 <p class="makes__example-rules-item-desc">
                   Upload image for photo editing to perfectly fit Instagram,
                   Facebook, TikTok, YT, passport
@@ -122,14 +157,12 @@
               </li>
 
               <li class="makes__example-rules-item">
-                <img class="makes__example-rules-item-icon" />
-              </li>
-
-              <li class="makes__example-rules-item">
+                <div class="makes__example-rules-item-image-block">
                 <img
                   class="makes__example-rules-item-image"
                   src="./assets/makes-slider/slide-1/people4.webp"
                 />
+                </div>
                 <p class="makes__example-rules-item-desc">
                   Upload image for photo editing to perfectly fit Instagram,
                   Facebook, TikTok, YT, passport
@@ -233,7 +266,6 @@
       </section>
 
       <section class="save-money">
-      
         <div class="container">
           <div class="makes__descriptions">
             <div class="makes__descriptions-image">
@@ -283,42 +315,51 @@
           <h2 class="rules__title">
             How to achieve the best result with the picture background remover?
           </h2>
-  
+
           <ul class="rules__list">
             <li class="rules__list-item">
-              <img class="rules__list-item-img" src="./assets/rules/image_1.webp" />
+              <img
+                class="rules__list-item-img"
+                src="./assets/rules/image_1.webp"
+              />
               <h3 class="rules__list-item-title">
                 Take a photo of objects on the plain solid background
               </h3>
               <p class="rules__list-item-desc">
-                Take a photo of the product against a contrasting clear background
-                under steady lighting. For example, you have black shoes, then the
-                white color of the image background is perfect for sure (for
-                example, A4 sheet). Click here for detailed instructions "How to
-                take product photos at home or in the office".
+                Take a photo of the product against a contrasting clear
+                background under steady lighting. For example, you have black
+                shoes, then the white color of the image background is perfect
+                for sure (for example, A4 sheet). Click here for detailed
+                instructions "How to take product photos at home or in the
+                office".
               </p>
             </li>
             <li class="rules__list-item">
-              <img class="rules__list-item-img" src="./assets/rules/image_2.webp" />
+              <img
+                class="rules__list-item-img"
+                src="./assets/rules/image_2.webp"
+              />
               <h3 class="rules__list-item-title">Upload your photos</h3>
               <p class="rules__list-item-desc">
-                Upload a photo file with an unwanted background from the computer
-                or drag & drop it to the remover tool. Choose what to do next:
-                just remove background, add a new background, make an image
-                transparent, or edit it by adding shadows, changing color,
-                cropping or choosing image format. You can also work on particular
-                areas (like hair) that you want to delete with the manual
-                background eraser. Once satisfied, click the 'Download' button to
-                instantly download your finished product designs in the desired
-                resolution (png file).
+                Upload a photo file with an unwanted background from the
+                computer or drag & drop it to the remover tool. Choose what to
+                do next: just remove background, add a new background, make an
+                image transparent, or edit it by adding shadows, changing color,
+                cropping or choosing image format. You can also work on
+                particular areas (like hair) that you want to delete with the
+                manual background eraser. Once satisfied, click the 'Download'
+                button to instantly download your finished product designs in
+                the desired resolution (png file).
               </p>
               <div class="rules__list-item-upload-block">
-
                 <button class="rules__list-item-upload">Upload Images</button>
               </div>
             </li>
             <li class="rules__list-item">
-              <img class="rules__list-item-img" src="./assets/rules/image_3.webp"/>
+              <img
+                class="rules__list-item-img"
+                src="./assets/rules/image_3.webp"
+              />
               <h3 class="rules__list-item-title">
                 Download image for any purpose
               </h3>
@@ -330,145 +371,329 @@
               </p>
             </li>
           </ul>
-
         </div>
-        
       </section>
 
-      <section class="example">
+      <section class="example" >
         <h2 class="example__title">
           User Cases of white background remover for Business Purposes
         </h2>
         <div class="container">
-        <div class="example__slider">
-          <div class="example__slider-slide">
-            <h3 class="example__slider-slide-title">Case 1</h3>
-            <ul class="example__slider-slide-list">
-              <li class="example__slider-slide-info">
-                <img class="example__slider-slide-info-img" src="./assets/example-slider/1_1.webp"/>
-                <p class="example__slider-slide-info-desc">
-                  The user uploaded 5 photos of a toothbrush to get new
-                  backgrounds.
-                </p>
-              </li>
-              <li class="example__slider-slide-info">
-                <img class="example__slider-slide-info-img" src="./assets/example-slider/1_2.webp" />
-                <p class="example__slider-slide-info-desc">
-                  An hour later, bg removal tool AI generated 19 variants of new
-                  image for Amazon.
-                </p>
-              </li>
-              <li class="example__slider-slide-info">
-                <img class="example__slider-slide-info-img" src="./assets/example-slider/1_3.webp"/>
-                <p class="example__slider-slide-info-desc">
-                  The user successfully uploaded product photos with new
-                  background to Amazon.
-                </p>
-              </li>
-            </ul>
+          <div class="example__slider">
+            <div class="swiper" id="example">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="example__slider-slide">
+                    <h3 class="example__slider-slide-title">Case 1</h3>
+                    <ul class="example__slider-slide-list">
+                      <li class="example__slider-slide-info">
+                        <img
+                          class="example__slider-slide-info-img"
+                          src="./assets/example-slider/1_1.webp"
+                        />
+                        <p class="example__slider-slide-info-desc">
+                          The user uploaded 5 photos of a toothbrush to get new
+                          backgrounds.
+                        </p>
+                      </li>
+                      <li class="example__slider-slide-info">
+                        <img
+                          class="example__slider-slide-info-img"
+                          src="./assets/example-slider/1_2.webp"
+                        />
+                        <p class="example__slider-slide-info-desc">
+                          An hour later, bg removal tool AI generated 19
+                          variants of new image for Amazon.
+                        </p>
+                      </li>
+                      <li class="example__slider-slide-info">
+                        <img
+                          class="example__slider-slide-info-img"
+                          src="./assets/example-slider/1_3.webp"
+                        />
+                        <p class="example__slider-slide-info-desc">
+                          The user successfully uploaded product photos with new
+                          background to Amazon.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="example__slider-slide">
+                    <h3 class="example__slider-slide-title">Case 1</h3>
+                    <ul class="example__slider-slide-list">
+                      <li class="example__slider-slide-info">
+                        <img
+                          class="example__slider-slide-info-img"
+                          src="./assets/example-slider/1_1.webp"
+                        />
+                        <p class="example__slider-slide-info-desc">
+                          The user uploaded 5 photos of a toothbrush to get new
+                          backgrounds.
+                        </p>
+                      </li>
+                      <li class="example__slider-slide-info">
+                        <img
+                          class="example__slider-slide-info-img"
+                          src="./assets/example-slider/1_2.webp"
+                        />
+                        <p class="example__slider-slide-info-desc">
+                          An hour later, bg removal tool AI generated 19
+                          variants of new image for Amazon.
+                        </p>
+                      </li>
+                      <li class="example__slider-slide-info">
+                        <img
+                          class="example__slider-slide-info-img"
+                          src="./assets/example-slider/1_3.webp"
+                        />
+                        <p class="example__slider-slide-info-desc">
+                          The user successfully uploaded product photos with new
+                          background to Amazon.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="example__slider-slide">
+                    <h3 class="example__slider-slide-title">Case 1</h3>
+                    <ul class="example__slider-slide-list">
+                      <li class="example__slider-slide-info">
+                        <img
+                          class="example__slider-slide-info-img"
+                          src="./assets/example-slider/1_1.webp"
+                        />
+                        <p class="example__slider-slide-info-desc">
+                          The user uploaded 5 photos of a toothbrush to get new
+                          backgrounds.
+                        </p>
+                      </li>
+                      <li class="example__slider-slide-info">
+                        <img
+                          class="example__slider-slide-info-img"
+                          src="./assets/example-slider/1_2.webp"
+                        />
+                        <p class="example__slider-slide-info-desc">
+                          An hour later, bg removal tool AI generated 19
+                          variants of new image for Amazon.
+                        </p>
+                      </li>
+                      <li class="example__slider-slide-info">
+                        <img
+                          class="example__slider-slide-info-img"
+                          src="./assets/example-slider/1_3.webp"
+                        />
+                        <p class="example__slider-slide-info-desc">
+                          The user successfully uploaded product photos with new
+                          background to Amazon.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="example__slider-slide">
+                    <h3 class="example__slider-slide-title">Case 1</h3>
+                    <ul class="example__slider-slide-list">
+                      <li class="example__slider-slide-info">
+                        <img
+                          class="example__slider-slide-info-img"
+                          src="./assets/example-slider/1_1.webp"
+                        />
+                        <p class="example__slider-slide-info-desc">
+                          The user uploaded 5 photos of a toothbrush to get new
+                          backgrounds.
+                        </p>
+                      </li>
+                      <li class="example__slider-slide-info">
+                        <img
+                          class="example__slider-slide-info-img"
+                          src="./assets/example-slider/1_2.webp"
+                        />
+                        <p class="example__slider-slide-info-desc">
+                          An hour later, bg removal tool AI generated 19
+                          variants of new image for Amazon.
+                        </p>
+                      </li>
+                      <li class="example__slider-slide-info">
+                        <img
+                          class="example__slider-slide-info-img"
+                          src="./assets/example-slider/1_3.webp"
+                        />
+                        <p class="example__slider-slide-info-desc">
+                          The user successfully uploaded product photos with new
+                          background to Amazon.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
         </div>
-        </div>
-
       </section>
 
       <section class="gallery">
         <div class="container">
-        <h2 class="gallery__title">Gallery</h2>
-        <p class="gallery__desc">
-          Check out examples of how to remove the background and create images
-          with white or transparent background with Retoucher Online background
-          remove tools in seconds:
-        </p>
-        <div class="gallery__slider"></div>
+          <h2 class="gallery__title">Gallery</h2>
+          <p class="gallery__desc">
+            Check out examples of how to remove the background and create images
+            with white or transparent background with Retoucher Online
+            background remove tools in seconds:
+          </p>
+          <div class="gallery__slider">
+            <div class="swiper" id="gallery">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                
+                <div class="swiper-slide">
+                  <img class="gallery__slider-img" src="./assets/gallery-slider/1.webp"/>
+                </div>
+                <div class="swiper-slide">
+                  <img class="gallery__slider-img" src="./assets/gallery-slider/2.webp"/>
+                </div>
+                <div class="swiper-slide">
+                  <img class="gallery__slider-img" src="./assets/gallery-slider/3.webp"/>
+                </div>
+                <div class="swiper-slide">
+                  <img class="gallery__slider-img" src="./assets/gallery-slider/4.webp"/>
+                </div>
+                <div class="swiper-slide">
+                  <img class="gallery__slider-img" src="./assets/gallery-slider/5.webp"/>
+                </div>
+                <div class="swiper-slide">
+                  <img class="gallery__slider-img" src="./assets/gallery-slider/6.webp"/>
+                </div>
+                <div class="swiper-slide">
+                  <img class="gallery__slider-img" src="./assets/gallery-slider/7.webp"/>
+                </div>
+                
+                
+              
+              </div>
 
-      </div>
-      <div class="gallery__notification">
-        <div class="container">
-        <h3 class="gallery__notification-title">
-          Remove background from image online for free! Save your time and money
-          for really creative tasks!
-        </h3>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
         </div>
+        <div class="gallery__notification">
+          <div class="container">
+            <h3 class="gallery__notification-title">
+              Remove background from image online for free! Save your time and
+              money for really creative tasks!
+            </h3>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-      <div class="footer__up">
-        <div class="footer__up-tools">
-          <h3 class="footer__up-title">TOOLS</h3>
-          <ul class="footer__up-menu">
-            <li class="footer__up-item">
-              <a class="footer__up-item-link">Image Resizer</a>
-            </li>
-            <li class="footer__up-item">
-              <a class="footer__up-item-link">Image Rotator</a>
-            </li>
-            <li class="footer__up-item">
-              <a class="footer__up-item-link">Image Flipper</a>
-            </li>
-            <li class="footer__up-item">
-              <a class="footer__up-item-link">Image Cropper</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__up-contacts">
-          <h3 class="footer__up-title">FOLLOW US</h3>
-          <ul class="footer__up-social">
-            <li class="footer__up-social-item">
-              <a class="footer__up-social-link">
-                <img class="footer__up-social-link-icon" src="./assets/footer/facebook.png" alt="facebook" />
-              </a>
-            </li>
-            <li class="footer__up-social-item">
-              <a class="footer__up-social-link">
-                <img class="footer__up-social-link-icon" src="./assets/footer/instagram.png" alt="instagram" />
-              </a>
-            </li>
-            <li class="footer__up-social-item">
-              <a class="footer__up-social-link">
-                <img class="footer__up-social-link-icon" src="./assets/footer/twiter.png" alt="twiter" />
-              </a>
-            </li>
-            <li class="footer__up-social-item">
-              <a class="footer__up-social-link">
-                <img class="footer__up-social-link-icon" src="./assets/footer/pinter.png" alt="pinter" />
-              </a>
-            </li>
-          </ul>
+        <div class="footer__up">
+          <div class="footer__up-tools">
+            <h3 class="footer__up-title">TOOLS</h3>
+            <ul class="footer__up-menu">
+              <li class="footer__up-item">
+                <a class="footer__up-item-link">Image Resizer</a>
+              </li>
+              <li class="footer__up-item">
+                <a class="footer__up-item-link">Image Rotator</a>
+              </li>
+              <li class="footer__up-item">
+                <a class="footer__up-item-link">Image Flipper</a>
+              </li>
+              <li class="footer__up-item">
+                <a class="footer__up-item-link">Image Cropper</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__up-contacts">
+            <h3 class="footer__up-title">FOLLOW US</h3>
+            <ul class="footer__up-social">
+              <li class="footer__up-social-item">
+                <a class="footer__up-social-link">
+                  <img
+                    class="footer__up-social-link-icon"
+                    src="./assets/footer/facebook.png"
+                    alt="facebook"
+                  />
+                </a>
+              </li>
+              <li class="footer__up-social-item">
+                <a class="footer__up-social-link">
+                  <img
+                    class="footer__up-social-link-icon"
+                    src="./assets/footer/instagram.png"
+                    alt="instagram"
+                  />
+                </a>
+              </li>
+              <li class="footer__up-social-item">
+                <a class="footer__up-social-link">
+                  <img
+                    class="footer__up-social-link-icon"
+                    src="./assets/footer/twiter.png"
+                    alt="twiter"
+                  />
+                </a>
+              </li>
+              <li class="footer__up-social-item">
+                <a class="footer__up-social-link">
+                  <img
+                    class="footer__up-social-link-icon"
+                    src="./assets/footer/pinter.png"
+                    alt="pinter"
+                  />
+                </a>
+              </li>
+            </ul>
 
-          <h3 class="footer__up-title">CONTACT US</h3>
-          <p class="footer__up-desc">
-            Need support or have a suggestion? 
-            <br/>We want to make friends with our
-            clients, so we will be happy to help you.
+            <h3 class="footer__up-title">CONTACT US</h3>
+            <p class="footer__up-desc">
+              Need support or have a suggestion?
+              <br />We want to make friends with our clients, so we will be
+              happy to help you.
+            </p>
+            <a
+              class="footer__up-mail"
+              href="mailto:emma.cooper@retoucher.online"
+            >
+              <img
+                class="footer__up-mail-icon"
+                src="./assets/footer/mail.png"
+              />
+              emma.cooper@retoucher.online
+            </a>
+
+            <ul class="footer__up-privacy">
+              <li class="footer__up-item">
+                <a class="footer__up-item-link">Privacy policy</a>
+              </li>
+              <li class="footer__up-item">
+                <a class="footer__up-item-link">Pricing</a>
+              </li>
+              <li class="footer__up-item">
+                <a class="footer__up-item-link">Refunds</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__down">
+          <p class="footer__down-text">
+            © 2023 Retoucher online. All rights reserved.
           </p>
-          <a class="footer__up-mail" href="mailto:emma.cooper@retoucher.online">
-            <img class="footer__up-mail-icon" src="./assets/footer/mail.png" />
-            emma.cooper@retoucher.online
-          </a>
-
-          <ul class="footer__up-privacy">
-            <li class="footer__up-item">
-              <a class="footer__up-item-link">Privacy policy</a>
-            </li>
-            <li class="footer__up-item">
-              <a class="footer__up-item-link">Pricing</a>
-            </li>
-            <li class="footer__up-item">
-              <a class="footer__up-item-link">Refunds</a>
-            </li>
-          </ul>
         </div>
-      </div>
-      <div class="footer__down">
-        <p class="footer__down-text">
-          © 2023 Retoucher online. All rights reserved.
-        </p>
-      </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/sliders.js"></script>
   </body>
 </html>
